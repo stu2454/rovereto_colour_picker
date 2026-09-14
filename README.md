@@ -2,6 +2,13 @@
 
 A lightweight React/Vite prototype for testing exterior paint schemes against a fixed front-elevation illustration of the house.
 
+## Returning to this project
+
+Start with [PROJECT_STATUS.md](PROJECT_STATUS.md) for the current state, known issues,
+validation and next task. [AGENTS.md](AGENTS.md) tells coding agents how to resume and
+maintain the handover. [DEVLOG.md](DEVLOG.md) records changes chronologically;
+[CODEX_PROMPT.md](CODEX_PROMPT.md) preserves the original brief.
+
 ## Why this approach
 
 The foundation image stays fixed. Colour is applied as opaque SVG fills with separate neutral architectural detail and original glass/hardware layers. This means:

@@ -101,3 +101,11 @@ Review the corrected colour rendering in the user's browser. If the named-paint 
 - Published at https://stu2454.github.io/rovereto_colour_picker/; GitHub Actions run 34830455510 completed successfully.
 - Live-site Chrome checks passed: foundation/detail assets loaded under the repository path, all 45 colour sample checks matched exactly, region/save/preset bindings worked, and saved schemes reloaded after a full browser restart.
 - No runtime browser errors. Development-only inspection controls are absent from production as intended.
+
+## 2026-09-15 — Persistent project handover
+
+- Added PROJECT_STATUS.md as the current snapshot: deployed app, repository, completed features, limitations, dated verification evidence, test setup and recommended next task.
+- Added AGENTS.md with session-start checks, the later colour-fidelity requirements and instructions to maintain status/log after meaningful work.
+- Linked the handover from README.md; preserved CODEX_PROMPT.md as the original brief.
+- Validation: reviewed documentation against Git history, existing implementation and deployment workflow. No application changes or build rerun needed.
+- Existing mask approximations unchanged. No feature work in progress. Recommended next task: versioned JSON backup/import for transferring saved schemes between origins and browsers, subject to the user's next request.
