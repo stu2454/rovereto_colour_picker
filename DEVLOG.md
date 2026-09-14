@@ -109,3 +109,10 @@ Review the corrected colour rendering in the user's browser. If the named-paint 
 - Linked the handover from README.md; preserved CODEX_PROMPT.md as the original brief.
 - Validation: reviewed documentation against Git history, existing implementation and deployment workflow. No application changes or build rerun needed.
 - Existing mask approximations unchanged. No feature work in progress. Recommended next task: versioned JSON backup/import for transferring saved schemes between origins and browsers, subject to the user's next request.
+
+## 2026-09-15 — Reusable project starter template
+
+- Added PROJECT_STARTER_TEMPLATE.md with detailed reusable templates for a brief, agent instructions, current status, development log and README, plus session prompts and Git/deployment guidance.
+- Clearly separated generic placeholders from facts about this project; linked the template from README and updated the current handover.
+- Validation: documentation structure, links and diff reviewed; no application code changed and no build rerun required.
+- Existing mask limitations unchanged. Next application task remains the recommended portable scheme backup/import work.

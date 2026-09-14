@@ -9,6 +9,8 @@ validation and next task. [AGENTS.md](AGENTS.md) tells coding agents how to resu
 maintain the handover. [DEVLOG.md](DEVLOG.md) records changes chronologically;
 [CODEX_PROMPT.md](CODEX_PROMPT.md) preserves the original brief.
 
+For new projects, use [PROJECT_STARTER_TEMPLATE.md](PROJECT_STARTER_TEMPLATE.md), a reusable brief, agent-instruction and handover template.
+
 ## Why this approach
 
 The foundation image stays fixed. Colour is applied as opaque SVG fills with separate neutral architectural detail and original glass/hardware layers. This means:
