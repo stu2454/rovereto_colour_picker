@@ -95,3 +95,9 @@ Review the corrected colour rendering in the user's browser. If the named-paint 
 - Ignored generated TypeScript build metadata and documented the Pages URL and browser-local scheme storage boundary.
 - Validation: npm run build passes. Canonical image, masks and paint rendering unchanged.
 - Target: existing empty repository stu2454/rovereto_colour_picker. Deployment verification pending.
+
+### Deployment verified
+
+- Published at https://stu2454.github.io/rovereto_colour_picker/; GitHub Actions run 34830455510 completed successfully.
+- Live-site Chrome checks passed: foundation/detail assets loaded under the repository path, all 45 colour sample checks matched exactly, region/save/preset bindings worked, and saved schemes reloaded after a full browser restart.
+- No runtime browser errors. Development-only inspection controls are absent from production as intended.
