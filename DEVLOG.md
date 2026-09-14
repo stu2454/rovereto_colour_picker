@@ -116,3 +116,11 @@ Review the corrected colour rendering in the user's browser. If the named-paint 
 - Clearly separated generic placeholders from facts about this project; linked the template from README and updated the current handover.
 - Validation: documentation structure, links and diff reviewed; no application code changed and no build rerun required.
 - Existing mask limitations unchanged. Next application task remains the recommended portable scheme backup/import work.
+
+## 2026-09-15 — Shared handover for Codex and Claude Code
+
+- Updated the reusable template to include a small CLAUDE.md entry point importing AGENTS.md, keeping one source of shared instructions.
+- Added guidance for switching tools without relying on private conversation memory and for avoiding conflicting simultaneous edits.
+- Added the same CLAUDE.md entry point to this project and updated README/status.
+- Validation: checked Claude Code's documented @path import support and reviewed the documentation diff. No Claude Code runtime test or app build run for this documentation-only change.
+- Mask limitations and the recommended next application task remain unchanged.

@@ -4,7 +4,7 @@ Last updated: 2026-09-15.
 
 ## Where we left off
 
-The visualiser is deployed and usable. The latest task added PROJECT_STARTER_TEMPLATE.md, a reusable setup and handover guide for other projects; no application behaviour changed. No feature implementation is currently in progress.
+The visualiser is deployed and usable. The latest task made PROJECT_STARTER_TEMPLATE.md usable with Codex or Claude Code and added a root CLAUDE.md importing the shared AGENTS.md instructions; no application behaviour changed. No feature implementation is currently in progress.
 
 - Live site: https://stu2454.github.io/rovereto_colour_picker/
 - Repository: https://github.com/stu2454/rovereto_colour_picker

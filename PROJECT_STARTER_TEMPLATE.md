@@ -1,6 +1,6 @@
 # Reusable project setup and handover template
 
-Use this document when starting a software project with an AI coding assistant. It establishes a clear brief, durable project memory and a repeatable way to resume work.
+Use this document when starting a software project with Codex, Claude Code or another AI coding assistant. It establishes a clear brief, durable project memory and a repeatable way to resume work.
 
 This is a template, not a description of the repository it happens to be stored in. Replace bracketed placeholders before using it. Remove sections that do not apply. Do not treat example features or commands as requirements.
 
@@ -17,7 +17,7 @@ For an existing project, inspect its files and preserve established conventions.
 
 ### Initial setup prompt
 
-> Read PROJECT_STARTER_TEMPLATE.md and inspect this workspace, including existing agent instructions and Git status. Use my completed brief to establish the project documentation described here. Preserve existing code, documentation and uncommitted changes. Replace placeholders only when supported by the brief or repository; mark unknowns honestly. Create or update AGENTS.md, PROJECT_BRIEF.md, PROJECT_STATUS.md, DEVLOG.md and README.md. Record a small, testable first milestone. Ask about missing information only when it blocks a meaningful decision, and continue independent preparation where possible. Do not treat documentation setup as permission to implement the entire backlog, publish the project or introduce new services.
+> Read PROJECT_STARTER_TEMPLATE.md and inspect this workspace, including existing agent instructions and Git status. Use my completed brief to establish the project documentation described here. Preserve existing code, documentation and uncommitted changes. Replace placeholders only when supported by the brief or repository; mark unknowns honestly. Create or update AGENTS.md, CLAUDE.md, PROJECT_BRIEF.md, PROJECT_STATUS.md, DEVLOG.md and README.md. Record a small, testable first milestone. Ask about missing information only when it blocks a meaningful decision, and continue independent preparation where possible. Do not treat documentation setup as permission to implement the entire backlog, publish the project or introduce new services.
 
 ### Starting implementation
 
@@ -29,7 +29,8 @@ After reviewing the brief, give a concrete task:
 
 | File | Purpose | When it changes |
 | --- | --- | --- |
-| `AGENTS.md` | Working instructions and constraints for coding assistants | When the working process or enduring constraints change |
+| `AGENTS.md` | Shared working instructions and constraints | When the working process or enduring constraints change |
+| `CLAUDE.md` | Claude Code entry point importing the shared instructions | When Claude-specific setup changes |
 | `PROJECT_BRIEF.md` | Product purpose, agreed scope and acceptance criteria | When requirements change; record the decision explicitly |
 | `PROJECT_STATUS.md` | Concise current snapshot and next task | After meaningful work and before a handover |
 | `DEVLOG.md` | Dated history of changes, decisions and validation | Append after meaningful work |
@@ -45,6 +46,32 @@ Optional files, only when useful:
 - `.env.example`: configuration variable names and safe example values, never real secrets.
 
 If an existing project uses `CODEX_PROMPT.md` as its brief, retain that name and link to it. Do not duplicate the same requirements in two files that may drift apart.
+
+### Using Codex and Claude Code interchangeably
+
+Keep the shared working instructions in `AGENTS.md`. Create a root `CLAUDE.md` with this content:
+
+```markdown
+# Project instructions
+
+@AGENTS.md
+
+Use PROJECT_STATUS.md as the current handover. Follow the shared instructions above
+and update the same status and development log after meaningful work.
+```
+
+Claude Code supports importing instruction files with `@path` syntax; this avoids maintaining a second copy of the project rules. See [Claude Code memory documentation](https://code.claude.com/docs/en/memory).
+
+- Keep product requirements in `PROJECT_BRIEF.md`, independent of the coding tool.
+- Both tools should read and update the same `PROJECT_STATUS.md` and `DEVLOG.md`.
+- Keep `CLAUDE.md` small; put shared rules in `AGENTS.md`, with only necessary tool-specific additions in the entry point.
+- Do not make `AGENTS.md` import `CLAUDE.md` back; avoid circular imports.
+- Do not assume either tool can see the other's conversation or private memory. Record important decisions in the repository.
+- Use the same resume prompts below with either tool. Explicitly asking it to read the handover also helps when automatic instruction loading is disabled.
+- When switching tools, inspect Git status first. Preserve and explain any unfinished edits.
+- If both tools work simultaneously, use separate branches/worktrees and coordinate changes before merging. Shared documentation alone does not prevent edit conflicts.
+
+Existing `CLAUDE.md` files may contain important rules. Preserve those rules and reconcile overlaps before replacing anything with this small entry point.
 
 ## 3. Project brief template
 

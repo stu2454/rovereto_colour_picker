@@ -9,7 +9,7 @@ validation and next task. [AGENTS.md](AGENTS.md) tells coding agents how to resu
 maintain the handover. [DEVLOG.md](DEVLOG.md) records changes chronologically;
 [CODEX_PROMPT.md](CODEX_PROMPT.md) preserves the original brief.
 
-For new projects, use [PROJECT_STARTER_TEMPLATE.md](PROJECT_STARTER_TEMPLATE.md), a reusable brief, agent-instruction and handover template.
+For new projects, use [PROJECT_STARTER_TEMPLATE.md](PROJECT_STARTER_TEMPLATE.md), a reusable brief, agent-instruction and handover template for Codex or Claude Code. The root `CLAUDE.md` imports the shared `AGENTS.md` instructions.
 
 ## Why this approach
 
